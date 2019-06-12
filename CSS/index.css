@@ -1,0 +1,49 @@
+body{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: #072C77;
+
+}
+#form{
+    border-radius: 3px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 90%;
+    width: 60%;
+    background-color: #091620;
+}
+#imge{
+    border-radius: 3px;
+    height: 100%;
+    width: 41%;
+    float: left;
+    background-color: #FBDBC1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+@media only screen and (max-width: 600px) {
+    #form{
+        height: 100%;
+        width: 100%;
+        background-image: url('../ASSETS/form.jpg');
+        background: 
+            linear-gradient(
+                to left,
+                rgba(9, 22, 32, 0.9) , 
+                rgba(9, 22, 32, 0.2) 100%
+            ),
+            url('../ASSETS/form.jpg');   
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #imge{
+        display: none;
+    }
+  }
