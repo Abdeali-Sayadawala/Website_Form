@@ -1,10 +1,11 @@
 body{
+    min-height: 100vh;
     width: 100%;
-    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-repeat: repeat-y;
     background-color: #072C77;
-
 }
-#form{
+.form{
     border-radius: 3px;
     margin: auto;
     top: 0;
@@ -12,38 +13,44 @@ body{
     left: 0;
     right: 0;
     position: absolute;
-    height: 90%;
     width: 60%;
+    height: 80vh;
     background-color: #091620;
 }
 #imge{
     border-radius: 3px;
-    height: 100%;
-    width: 41%;
-    float: left;
     background-color: #FBDBC1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-@media only screen and (max-width: 600px) {
-    #form{
-        height: 100%;
+.fill{
+    color:#FBDBC1;
+    background-color: aqua;
+    height: max-content;
+    width: max-content;
+}
+input{
+    background: transparent;
+    color:#FBDBC1;
+    border-radius: 7px;
+    border: 2px solid #FBDBC1;
+
+}
+form{
+    color:#FBDBC1;
+}
+
+@media only screen and (max-width: 576px) {
+    .form{
         width: 100%;
-        background-image: url('../ASSETS/form.jpg');
-        background: 
-            linear-gradient(
-                to left,
-                rgba(9, 22, 32, 0.9) , 
-                rgba(9, 22, 32, 0.2) 100%
-            ),
-            url('../ASSETS/form.jpg');   
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 100%;
     }
-    #imge{
-        display: none;
+    .imge{
+        background-image: 
+            linear-gradient(to left rgba(9,2,32,0.4) rgba(9,2,32,1));
     }
+    
+ 
   }
