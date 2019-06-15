@@ -28,24 +28,65 @@ body{
 .step{
     width: 100%;
     height: 10%;
-    border: 3px solid #FBDBC1;
-    margin-top: 10%;
+    margin-top: 26%;
+}
+.bar{
+    margin-top: 5px;
+    margin-left: 26%;
+    display: flex;
+    width: 70%;
+    /* border: 2px solid #FBDBC1; */
+}
+#first{
+    background-color: #FBDBC1;
+    width: 15px;
+    height: 15px;
+    border-radius: 45px;
+}
+#myProgress{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 50%;
+    position: relative;
+    background-color: #072C77;
+    height: 2px;
+}
+#myBar{
+    width: 0%;
+    height: 2px;
+    margin-left: 0px;
+    background-color: #FBDBC1;
+    border-radius: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#second{
+    background-color: #072C77;
+    width: 15px;
+    height: 15px;
+    margin-left: 0px;
+    border-radius: 45px;
 }
 .frm{
-    margin-top: 7%;
+    margin-top: -5%;
     height: 62%;
-    border: 3px solid #FBDBC1;
+    /* border: 3px solid #FBDBC1; */
 }
 input{
     background: transparent;
     color:#FBDBC1;
     border-radius: 7px;
     border: 2px solid #FBDBC1;
-
 }
 form{
     margin-top: 17%;
     color:#FBDBC1;
+}
+.nxt{
+
 }
 
 @media only screen and (max-width: 576px) {
