@@ -45,7 +45,8 @@
                             </table>
                     </form>
                 </center>
-                <button id="nxt" onclick="move()">Click Me</button> 
+                <button id="prv" onclick="prev()">Previous</button>
+                <button id="nxt" onclick="move()">Next</button> 
                 </div>
             </div>
         </div>
@@ -53,9 +54,11 @@
     <script src="JS/particles.js"></script>
     <script src="JS/app.js"></script>
     <script>
+
         function move() {
           var elem = document.getElementById("myBar");   
           var scnd = document.getElementById("second"); 
+          var prev = document.getElementById("prv");
           var width = 1;
           scnd.style.backgroundColor = '#072C77';
           var id = setInterval(frame, 3);
@@ -68,10 +71,25 @@
               elem.style.width = width + '%'; 
             }
           }
+          prev.style.display = 'inline-block';
           setTimeout(function(){
                    scnd.style.backgroundColor = '#FBDBC1';
            },399);
         }
-        </script>
+
+        function prev(){
+            var elem = document.getElementById("myBar");   
+            var scnd = document.getElementById("second"); 
+            var prev = document.getElementById("prv");
+            prev.style.display = 'none';
+            scnd.style.backgroundColor = '#072C77';
+            var width = 100;
+            var id = setInterval(frame, 3);
+            function frame(){
+                width--;
+                elem.style.width = width + '%';
+            }
+        }
+    </script>
 </body>
 </html>
